@@ -1,19 +1,23 @@
-using System;
-					
-public class Program
+#include <iostream>
+#include <cstring>  // include the string library
+
+using namespace std;
+
+int main()
 {
-	public static void Main()
-	{
-		string word1,word2;
-	 	word1 = Console.ReadLine().ToLower();
-		word2 = Console.ReadLine().ToLower();
-		if(word1==word2)
-		{
-			Console.WriteLine("yes");
-		}
-		else if(word1 != word2)
-		{
-			Console.WriteLine("no");
-		}	
-	}
+    char word1[20];
+    char word2[20];
+    cin >> word1;
+    cin >> word2;
+
+    if (strcasecmp(word1, word2) == 0)  
+    {
+        cout << "yes" << endl;
+    }
+    else
+    {
+        cout << "no" << endl;
+    }
+
+    return 0;
 }
