@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -42,4 +43,4 @@ namespace Diamond {
 int main() {
     Diamond::Main();
     return 0;
-}
+}}
